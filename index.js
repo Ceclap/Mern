@@ -27,6 +27,14 @@ app.post('/auth/register',registerValidator,(req, res)=>{
     })
 })
 
+
+app.post('/auth/login',(req, res)=>{
+    console.log(req.body)
+    res.json({
+        succes:true
+    })
+})
+
 app.listen(3000, (err)=>{
     if(err)
     {
